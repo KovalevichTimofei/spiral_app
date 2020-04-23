@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "linebreak-style": 0,
+    "react/prop-types": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "class-methods-use-this": "off",
+    "no-plusplus": "warn",
+    "no-use-before-define": "off",
+    "max-len": "warn",
+    "indent": ["error", 4, {"SwitchCase": 1}],
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent-props": ["error", 4],
+    "react/forbid-prop-types": "off"
+  }
+}
