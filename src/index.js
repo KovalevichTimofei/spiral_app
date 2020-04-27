@@ -2,7 +2,7 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 import PrimaryLayout from './containers/PrimaryLayout';
@@ -32,7 +32,6 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
         <Router>
             <Switch>
-                {console.log(process.env.NODE_ENV)}
                 <Route path="/" component={PrimaryLayout} />
             </Switch>
         </Router>

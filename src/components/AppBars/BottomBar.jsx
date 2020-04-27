@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
@@ -40,16 +40,18 @@ export default function BottomBar() {
         history.push(str);
     }
 
+    const emptyFunction = useCallback(() => {}, []); // FIXME: temprorary dummy function for non-existing pages
+
     const listItems = [
         {
-            name: 'Home', icon: <HomeIcon />, onClick: () => handleClick('/home'), value: '/home',
+            name: 'Home', icon: <HomeIcon />, onClick: useCallback(() => handleClick('/home'), []), value: '/home',
         },
         {
-            name: 'Accounts', icon: <AccountBoxIcon />, onClick: () => handleClick('/accounts'), value: '/accounts',
+            name: 'Accounts', icon: <AccountBoxIcon />, onClick: useCallback(() => handleClick('/accounts'), []), value: '/accounts',
         },
-        { name: 'Giving', icon: <PanToolIcon />, onClick: () => {} },
-        { name: 'Payments', icon: <MonetizationOnIcon />, onClick: () => {} },
-        { name: 'Credits', icon: <CreditCardIcon />, onClick: () => {} },
+        { name: 'Giving', icon: <PanToolIcon />, onClick: emptyFunction },
+        { name: 'Payments', icon: <MonetizationOnIcon />, onClick: emptyFunction },
+        { name: 'Credits', icon: <CreditCardIcon />, onClick: emptyFunction },
     ];
 
     return (

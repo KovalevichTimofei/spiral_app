@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 
@@ -40,7 +40,7 @@ export default function MenuAppBar(props) {
     const classes = useStyles();
     const { isOpen, openChange } = props;
 
-    const openCloseSideMenu = () => openChange(!isOpen);
+    const openCloseSideMenu = useCallback(() => openChange(!isOpen), [isOpen]);
 
     return (
         <AppBar position="fixed" className={classes.root}>

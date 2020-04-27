@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 
@@ -46,7 +46,7 @@ export default function AppMenu(props) {
     const classes = useStyles();
     const { isOpen, openChange } = props;
 
-    const closeMenu = () => openChange(false);
+    const closeMenu = useCallback(() => openChange(false), []);
 
     const listItems = [
         { name: 'Help and support', icon: <HelpOutlineIcon /> },
