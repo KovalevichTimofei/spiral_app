@@ -1,11 +1,11 @@
 {
-  "main.js": "/spiral-app/static/js/main.d9a437e9.chunk.js",
-  "main.js.map": "/spiral-app/static/js/main.d9a437e9.chunk.js.map",
-  "runtime~main.js": "/spiral-app/static/js/runtime~main.b65ae8f0.js",
-  "runtime~main.js.map": "/spiral-app/static/js/runtime~main.b65ae8f0.js.map",
-  "static/js/2.647d2793.chunk.js": "/spiral-app/static/js/2.647d2793.chunk.js",
-  "static/js/2.647d2793.chunk.js.map": "/spiral-app/static/js/2.647d2793.chunk.js.map",
-  "index.html": "/spiral-app/index.html",
-  "precache-manifest.5721705946053b1b1fa9189ece35113c.js": "/spiral-app/precache-manifest.5721705946053b1b1fa9189ece35113c.js",
-  "service-worker.js": "/spiral-app/service-worker.js"
+  "main.js": "/spiral_app/static/js/main.d9a437e9.chunk.js",
+  "main.js.map": "/spiral_app/static/js/main.d9a437e9.chunk.js.map",
+  "runtime~main.js": "/spiral_app/static/js/runtime~main.b5134085.js",
+  "runtime~main.js.map": "/spiral_app/static/js/runtime~main.b5134085.js.map",
+  "static/js/2.647d2793.chunk.js": "/spiral_app/static/js/2.647d2793.chunk.js",
+  "static/js/2.647d2793.chunk.js.map": "/spiral_app/static/js/2.647d2793.chunk.js.map",
+  "index.html": "/spiral_app/index.html",
+  "precache-manifest.f4d222b44314d90afced19d165e8e822.js": "/spiral_app/precache-manifest.f4d222b44314d90afced19d165e8e822.js",
+  "service-worker.js": "/spiral_app/service-worker.js"
 }
